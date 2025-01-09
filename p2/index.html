@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="utils.js" type="text/javascript"></script>
+  </head>
+  <body onload="initializeBroadcastChannels()">
+    <h1>Messaging service</h1>
+    <div id="chat-box" class="chatBox">
+      <textarea id="chat-input" rows="10" cols="70"></textarea>
+      <input type="submit" class="button" value="Send" onclick="submitMessage()"/>
+      <input type="button" class="button" value="Pick a coffee for me!" onclick="getCoffee()"/>
+    </div>
+    <ul id="chat-messages" class="chatMessages"/>
+  </body>
+</html>

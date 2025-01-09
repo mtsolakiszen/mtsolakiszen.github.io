@@ -1,0 +1,53 @@
+body {
+  font-family: "Arial", "monospace";
+}
+
+h1 {
+  text-align: center;
+}
+
+.chatBox {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.chatMessages {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.25s ease-in-out, color 0.25s ease-in-out, outline-color 0.1s ease-in-out, z-index 0.25s ease-in-out;
+  margin: 0px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: inherit;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  box-sizing: border-box;
+  user-select: none;
+  padding: 0px 1.07143em;
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  outline-color: transparent;
+  background-color: rgb(31, 115, 183);
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+}
+
+.submitButton:hover {
+  background-color: rgb(41, 80, 193);;
+}
