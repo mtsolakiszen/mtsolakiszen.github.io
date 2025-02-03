@@ -49,11 +49,11 @@ const getCoffee = () => {
 }
 
 const getRandomCoffeeResponse = async () => {
-  const resp = await fetch("https://api.sampleapis.com/coffee/hot");
+  const resp = await fetch("https://dummy-json.mock.beeceptor.com/todos");
   const data = await resp.json();
-  sendCoffeeResponse(data[Math.floor(Math.random() * data.length)].title);
+  sendCoffeeResponse(data[Math.floor(Math.random() * data.length)].title.toLowerCase());
 };
 
 const sendCoffeeResponse = (coffee) => {
-  sendMessage(`You should get a ${coffee}!`);
+  sendMessage(`You should ${coffee}!`);
 };
